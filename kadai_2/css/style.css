@@ -50,8 +50,8 @@ img {
   margin: 0 auto;
 }
 .wrap_blue div {
+  padding: 150px 0;
   width: 30%;
-  height: 300px;
   margin-bottom: 20px;
   background: blue;
 }
@@ -79,7 +79,7 @@ img {
   margin: 0 auto;
 }
 .menu h1 {
-  font-size: 3.5rem;
+  font-size: 35px;
 }
 .menu ul {
   display: flex;
@@ -88,7 +88,7 @@ img {
 .menu ul li {
   padding: 0 20px;
   border-right: 1px solid #999999;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 .menu ul li:last-child {
   border: none;
