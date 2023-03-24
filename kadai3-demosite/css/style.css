@@ -20,14 +20,10 @@ ul {
 ul li {
   width: 32%;
 }
-ul li .photo {
-  width: 100%;
-}
 ul li .photo img {
   width: 100%;
 }
 ul li .content {
-  width: 100%;
   background: white;
 }
 ul li h2 {
