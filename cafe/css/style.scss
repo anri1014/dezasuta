@@ -44,48 +44,46 @@ header{
         font-size: 30px;
     }
     .catch__title{
-        margin: 50px 0;
+        margin: 40px 0;
         font-size:82px;
-        line-height: 96px;
+        line-height: 1.17;
         letter-spacing: 0.82px; 
     }
     .catch__text{
         font-size: 23px;
-        line-height: 38px;
-        letter-spacing: 0.23px;
+        line-height: 1.65;
+        letter-spacing: 0.1em;
     }
 }
 
 .about-us{
     display: flex;
     justify-content: center;
-    margin-bottom: 107px;
+    max-width: 1000px;
+    margin: 0 auto 107px;
     .about-us__img{
-        margin-right:87px;
-        width: 500px;
-        height:550px;
-        border-bottom-right-radius: 16%;
+        margin-right:8.7%;
+        width: 50%;
+        max-width: 500px;
         overflow: hidden;
         img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            border-bottom-right-radius: 16%;
         }
     }
     .about-us__wrap{
+        width: 41%;
         h2{
             width: 270px;
-            margin-bottom: 60px;
+            margin: 55px 0 40px;
         }
         .about-us__wrap__lead{
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             font-size: 44px;
-            line-height: 61px;
+            line-height: 1.39;
         }
         .about-us__wrap__text{
-            max-width: 410px;
             font-size: 16px;
-            line-height: 26px;
+            line-height: 1.63;
 
         }
     }
@@ -222,7 +220,7 @@ header{
         }
         .footer_info{
             font-size: 20px;
-            line-height: 39px;
+            line-height: 1.95;
         }
     }
     .footer_copyright{
