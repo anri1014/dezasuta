@@ -127,11 +127,12 @@ header{
 .catch{
     margin: 107px 0 100px 0;
     text-align: center;
-    .catch__lead{
+    p{
+        margin-bottom: 48px;
         font-size: 30px;
     }
-    h3{
-        margin: 40px 0;
+    .catch__title{
+        margin-bottom: 42px;
         font-size:82px;
         line-height: 1.17;
         letter-spacing: 0.1em; 

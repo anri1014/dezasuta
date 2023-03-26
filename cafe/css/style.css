@@ -119,11 +119,12 @@ header .header_wrap .sp_nav {
   margin: 107px 0 100px 0;
   text-align: center;
 }
-.catch .catch__lead {
+.catch p {
+  margin-bottom: 48px;
   font-size: 30px;
 }
-.catch h3 {
-  margin: 40px 0;
+.catch .catch__title {
+  margin-bottom: 42px;
   font-size: 82px;
   line-height: 1.17;
   letter-spacing: 0.1em;
