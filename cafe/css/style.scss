@@ -72,6 +72,7 @@ header{
     }
     .about-us__wrap{
         width: 41%;
+        padding: 0 10px;
         h2{
             width: 270px;
             margin: 55px 0 40px;
@@ -99,27 +100,27 @@ header{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            width: 52vw;
             max-width: 1000px;
             margin: 0 auto;
+            padding: 0 10px;
             li{
+                width: 30%;
                 max-width: 300px;
                 .menu__img{
-                    width: 300px;
-                    height: 200px;
-                    border-top-right-radius: 42px;
-                    overflow: hidden;
                     img{
-                        width: 100%;
-                        object-fit: contain;
+                        border-top-right-radius: 42px;
                     }
                 }
                 .menu__title{
-                    margin: -10px 0 25px 0;
+                    margin: -10px 0 15px 0;
                     padding-left: 15px;
                     font-size: 38px;
                     color: #d30202;
                 }
+                .menu__desc {
+                    font-size: 17px;
+                    line-height: 1.47;
+                  }
             }
         }
     }
@@ -132,17 +133,6 @@ header{
         }
         .gallery__wrap{
             display: flex;
-            overflow: hidden;
-            .gallery__img{
-                max-width: 384px;
-                height: 300px;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
-
-                }
-            }
         }
     }
 
@@ -213,7 +203,7 @@ header{
             justify-content: flex-start;
             max-width: 1000px;
             margin: 0 auto;
-            padding: 85px 0;
+            padding: 85px 10px;
         .footer_logo{
             width: 227px;
             margin-right: 70px;
@@ -221,10 +211,12 @@ header{
         .footer_info{
             font-size: 20px;
             line-height: 1.95;
+            color: #000000;
         }
     }
     .footer_copyright{
         padding-bottom: 80px;
         text-align: center;
+        color: #000000;
     }
     }

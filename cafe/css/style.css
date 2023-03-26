@@ -70,6 +70,7 @@ header .header_wrap .pc_nav ul li {
 }
 .about-us .about-us__wrap {
   width: 41%;
+  padding: 0 10px;
 }
 .about-us .about-us__wrap h2 {
   width: 270px;
@@ -96,29 +97,26 @@ header .header_wrap .pc_nav ul li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 52vw;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .menu ul li {
+  width: 30%;
   max-width: 300px;
 }
-.menu ul li .menu__img {
-  width: 300px;
-  height: 200px;
-  border-top-right-radius: 42px;
-  overflow: hidden;
-}
 .menu ul li .menu__img img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  border-top-right-radius: 42px;
 }
 .menu ul li .menu__title {
-  margin: -10px 0 25px 0;
+  margin: -10px 0 15px 0;
   padding-left: 15px;
   font-size: 38px;
   color: #d30202;
+}
+.menu ul li .menu__desc {
+  font-size: 17px;
+  line-height: 1.47;
 }
 
 .gallery {
@@ -130,17 +128,6 @@ header .header_wrap .pc_nav ul li {
 }
 .gallery .gallery__wrap {
   display: flex;
-  overflow: hidden;
-}
-.gallery .gallery__wrap .gallery__img {
-  max-width: 384px;
-  height: 300px;
-}
-.gallery .gallery__wrap .gallery__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .event {
@@ -208,7 +195,7 @@ footer .footer_wrap {
   justify-content: flex-start;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 85px 0;
+  padding: 85px 10px;
 }
 footer .footer_wrap .footer_logo {
   width: 227px;
@@ -217,8 +204,10 @@ footer .footer_wrap .footer_logo {
 footer .footer_wrap .footer_info {
   font-size: 20px;
   line-height: 1.95;
+  color: #000000;
 }
 footer .footer_copyright {
   padding-bottom: 80px;
   text-align: center;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
