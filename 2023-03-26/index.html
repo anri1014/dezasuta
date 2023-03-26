@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .btn {
+            background: red;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+
+        }
+
+        .heading {
+            color: red;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>初めてのjquery</h1>
+    <button type="button" class="btn">ボタン</button>
+
+
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.btn').on('click', function () {
+                $('h1').toggleClass('heading');
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

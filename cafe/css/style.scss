@@ -34,20 +34,107 @@ header{
                 }
             }
         }
+        .sp_btn,
+        .sp_nav{
+            display: none;
+        }
     }
+    @media screen and (max-width: 1100px){
+        .header_wrap{
+        .pc_nav
+        {
+            display: none;
+        }
+        .sp_btn{
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            z-index: 2;
+            height: 23px;
+            cursor: pointer;
+            
+            span{
+                display: block;
+                position: relative;
+                top: 10px;
+                width: 33px;
+                height: 3px;
+                border-radius: 2px;
+                background: #fff;
+            }
+            span::before,
+            span::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 33px;
+                height: 3px;
+                border-radius: 2px;
+                background: #fff;
+                transition: 0.3s;
+    
+            }
+            span::before{
+                bottom: 10px;
+            }
+            span::after{
+                top: 10px;
+            }
+        }
+        }
+            /* ハンバーガー 閉じる */
+    .sp_btn.open span {
+        background: transparent;
+    }
+        .sp_btn.open span::before{
+            bottom: 0;
+            transform: rotate(45deg);
+        }
+        .sp_btn.open span::after{
+            top: 0;
+            transform: rotate(135deg);
+        }
+        .sp_nav{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.8);
+            ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            li{
+                padding: 20px 0;
+                color: #fff;
+                font-size: 18px;
+                font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+                "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+                "ＭＳ 明朝", serif;
+                text-align: center;
+                }
+                }
+                
+            }
+    }
+    
 }
-
 .catch{
     margin: 107px 0 100px 0;
     text-align: center;
     .catch__lead{
         font-size: 30px;
     }
-    .catch__title{
+    h3{
         margin: 40px 0;
         font-size:82px;
         line-height: 1.17;
-        letter-spacing: 0.82px; 
+        letter-spacing: 0.1em; 
     }
     .catch__text{
         font-size: 23px;
@@ -56,12 +143,12 @@ header{
     }
 }
 
-.about-us{
+.about{
     display: flex;
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto 107px;
-    .about-us__img{
+    .about__img{
         margin-right:8.7%;
         width: 50%;
         max-width: 500px;
@@ -70,19 +157,20 @@ header{
             border-bottom-right-radius: 16%;
         }
     }
-    .about-us__wrap{
+    .about__wrap{
         width: 41%;
         padding: 0 10px;
         h2{
-            width: 270px;
-            margin: 55px 0 40px;
+            margin-bottom: 48px;
+            padding-top: 56px;
+            text-align: left;
         }
-        .about-us__wrap__lead{
+        .about__wrap__lead{
             margin-bottom: 20px;
             font-size: 44px;
             line-height: 1.39;
         }
-        .about-us__wrap__text{
+        .about__wrap__text{
             font-size: 16px;
             line-height: 1.63;
 
@@ -91,11 +179,7 @@ header{
     }
 
     .menu{
-        margin-bottom: 100px;
-        h2{
-            width: 150px;
-            margin: 0 auto 48px;
-        }
+        margin-bottom: 90px;
         ul{
             display: flex;
             justify-content: space-between;
@@ -111,13 +195,13 @@ header{
                         border-top-right-radius: 42px;
                     }
                 }
-                .menu__title{
+                h3{
                     margin: -10px 0 15px 0;
                     padding-left: 15px;
                     font-size: 38px;
                     color: #d30202;
                 }
-                .menu__desc {
+                p {
                     font-size: 17px;
                     line-height: 1.47;
                   }
@@ -127,10 +211,6 @@ header{
 
     .gallery{
         margin: 0 auto 70px;
-        .gallery__title{
-            width: 245px;
-            margin: 0 auto 25px;
-        }
         .gallery__wrap{
             display: flex;
         }
@@ -138,26 +218,26 @@ header{
 
     .event{
         margin: 0 auto 80px;
-        .event__title{
-            width: 173px;
-            margin: 0 auto 40px;
-        }
-        ol{
-            width: 52vw;
+        .event__list{
+            display: flex;
+            justify-content: center;
             max-width: 1000px;
             margin: 0 auto;
-            padding: 40px 70px;
+            padding: 40px;
             box-sizing: border-box;
             background: #ffffff;
-            border: solid 3px $brown;
+            border: solid 3px #4f260b;
+        ol{
+            margin: 0;
+            padding: 0;
             li{
                 display: flex;
                 margin: 0 auto 20px;
-                .event__date{
+                time{
                     padding-right: 55px;
                     font-size: 23px;
                 }
-                .event__article{
+                a{
                     font-size: 23px;
                     text-decoration: underline;
                     text-align: start;
@@ -169,12 +249,9 @@ header{
             }
         }
     }
+    }
 
     .access{
-        .access__title{
-            width: 214px;
-            margin :0 auto 45px;
-        }
         .access__map{
             width: 100%;
             height: 470px;
@@ -194,21 +271,21 @@ header{
             right: 5%;
             width: 125px;
             height: 125px;
-            img{
-                width: 100%;
-            }
         }
-        .footer_wrap{
+        .to-top:hover{
+            opacity: 1;
+        }
+        .footer__wrap{
             display: flex;
             justify-content: flex-start;
             max-width: 1000px;
             margin: 0 auto;
             padding: 85px 10px;
-        .footer_logo{
+        .footer__logo{
             width: 227px;
             margin-right: 70px;
         }
-        .footer_info{
+        .footer__info{
             font-size: 20px;
             line-height: 1.95;
             color: #000000;
