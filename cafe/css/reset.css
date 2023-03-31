@@ -61,3 +61,10 @@ section h2 {
 section h2 img {
   height: 100%;
 }
+@media screen and (max-width: 767px) {
+  section h2 {
+    height: 45px;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+}

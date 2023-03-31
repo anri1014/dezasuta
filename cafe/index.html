@@ -16,7 +16,11 @@
 
     <header id="header">
         <div class="header_slider">
-            <div><img src="images/pc_first-100.jpg" alt="店内の様子"></div>
+            <picture>
+                <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+                <img src="images/pc_first-100.jpg" alt="店内の様子">
+
+            </picture>
         </div>
         <div class="header_wrap">
             <h1 class="header_logo"><img src="images/design_cafe_logo_header@2x.png" alt="DESIGN CAFE"></h1>
@@ -50,7 +54,11 @@
     </div>
 
     <section id="about" class="about">
-        <div class="about__img"><img src="images/pc_about-100.jpg" alt="コーヒーの写真"></div>
+        <h2 class="sp__title"><img src="images/about_us@2x.png" alt="about us"></h2>
+        <picture>
+            <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
+            <img src="images/pc_about-100.jpg" alt="コーヒーの写真">
+        </picture>
         <div class="about__wrap">
             <h2><img src="images/about_us@2x.png" alt="about us"></h2>
             <div class="about__wrap__lead">私たちが提供する<br>こだわりのコーヒー</div>
@@ -111,7 +119,7 @@
     </section>
     <section id="access" class="access">
         <h2 class="access__title"><img src="images/access@2x.png" alt="access"></h2>
-        <div class="access__map"><iframe class="access__map__img"
+        <div class="access__map"><iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.106828220007!2d135.49375655048368!3d34.70248538033806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68d95e3a70b%3A0x1baec822e859c84a!2sOsaka%20Station!5e0!3m2!1sen!2sjp!4v1679631835921!5m2!1sen!2sjp"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></div>
