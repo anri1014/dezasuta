@@ -12,7 +12,7 @@ header{
         box-sizing: border-box;
         padding: 10px 7% 0px 2.8%;
         .header_logo{
-            max-width: 226px;
+            width: 226px;
             img{
                 width: 100%;
                 vertical-align: bottom;
@@ -39,6 +39,7 @@ header{
             display: none;
         }
     }
+
     @media screen and (max-width: 1100px){
         .header_wrap{
         .pc_nav
@@ -122,12 +123,22 @@ header{
                 
             }
     }
-    
 }
+
+@media screen and (max-width: 767px){
+    header{
+        .header_wrap{
+            .header_logo{
+                width: 186px;
+            }
+        }
+    }
+}
+
 .catch{
-    margin: 107px 0 100px 0;
+    margin: 100px 0;
     text-align: center;
-    p{
+    .catch__lead{
         margin-bottom: 48px;
         font-size: 30px;
     }
@@ -153,29 +164,32 @@ header{
         }
     }
 }
-@media screen  and (max-width: 767px){
+@media screen and (max-width: 767px){
     .catch{
         margin: 42px 0 0 0;
-        p{
-            margin-bottom: 20px;
+        .catch__lead{
+            margin-bottom: 22px;
             font-size: 17px;
-            margin-bottom: 30px;
         }
         .catch__title{
+            margin-bottom: 22px;
             font-size: 38px;
+            line-height: 1.16;
             letter-spacing: 0.02em;
         }
         .catch__text{
-            padding: 0 20px;
+            margin-bottom: 0;
+            padding: 0 18px;
             font-size: 16px;
+            line-height: 1.875;
             letter-spacing: 0.1em;
         }
     }
 }
 .about{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     max-width: 1000px;
     margin: 0 auto 107px;
     .sp__title{
@@ -185,17 +199,16 @@ header{
         padding-top: 56px;
     }
     .about__img{
-        margin-right:8.7%;
         width: 50%;
         max-width: 500px;
         overflow: hidden;
         img{
-            border-bottom-right-radius: 16%;
+            border-bottom-right-radius: 80px;
         }
     }
     .about__wrap{
         width: 41%;
-        padding: 0 10px;
+        padding: 0 10px 0 7%;
         h2{
             text-align: left;
         }
@@ -233,22 +246,29 @@ header{
           .sp__title{
             display: block;
             height: 45px;
-            margin-bottom: 16px;
+            margin-bottom: 15px;
+            padding-top: 55px;
+          }
+          .about__img{
+            img{
+                border-bottom-right-radius: 0px;
+            }
           }
           .about__wrap{
             width: auto;
-            margin-bottom: 55px;
+            margin-bottom: 45px;
             padding: 0 20px;
             h2{
                 display: none;
             }
             .about__wrap__lead{
-                margin-bottom: 28px;
-                padding-top: 40px;
+                margin-bottom: 20px;
+                padding-top: 35px;
                 font-size: 36px;
+                line-height: 1.25;
             }
             .about__wrap__text{
-                font-size: 16px;
+                line-height: 1.75;
             }
           }
         }
@@ -287,6 +307,7 @@ header{
         .menu{
             margin-bottom: 92px;
             ul{
+                padding: 0 38px;
                 display: block;
                 li{
                     width: 100%;
@@ -298,11 +319,13 @@ header{
                         }
                     }
                     h3{
-                        height: 50px;
-                        margin: -10px 0 0 -10px;
+                        margin: -10px 0 10px -10px;
+                        font-size: 40px;
+                        font-weight: normal;
                     }
                     p{
                         font-size: 17px;
+                        line-height: 1.59;
                     }
                 }
             }
@@ -359,6 +382,7 @@ header{
             margin-bottom: 33px;
             .event__list{
                 width: 90%;
+                padding: 25px 30px;
                 ol{
                     width: 100%;
                     li{
@@ -439,9 +463,9 @@ header{
             }
             .footer__wrap{
                 display: block;
-                padding: 50px 20px;
+                padding: 40px  20px 35px;
                 .footer__logo{
-                    padding-bottom: 35px;
+                    padding-bottom: 20px;
                 }
                 .footer__info{
                     font-size: 18px;
