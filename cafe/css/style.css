@@ -30,7 +30,8 @@ header .header_wrap .pc_nav ul li {
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 18px;
-  font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-family: 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   text-align: center;
 }
 header .header_wrap .sp_btn,
@@ -38,9 +39,6 @@ header .header_wrap .sp_nav {
   display: none;
 }
 @media screen and (max-width: 1100px) {
-  header {
-    /* ハンバーガー 閉じる */
-  }
   header .header_wrap .pc_nav {
     display: none;
   }
@@ -110,9 +108,23 @@ header .header_wrap .sp_nav {
     padding: 20px 0;
     color: #fff;
     font-size: 18px;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+      "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+      "ＭＳ 明朝", serif;
     text-align: center;
   }
+}
+
+.slick-dots {
+  bottom: 20px;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -448,4 +460,4 @@ footer .footer_copyright {
     padding-bottom: 35px;
     font-size: 16px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

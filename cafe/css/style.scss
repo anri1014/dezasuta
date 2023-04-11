@@ -125,6 +125,18 @@ header{
     }
 }
 
+.slick-dots {
+    bottom: 20px;
+    li button:before,
+li.slick-active button:before {
+    color: #fff;
+}
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 767px){
     header{
         .header_wrap{

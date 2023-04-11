@@ -42,6 +42,62 @@ a:hover {
   opacity: 0.5;
 }
 
+/*スライダー実装*/
+.slick-dots {
+  bottom: 20px;
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  top: 50%;
+}
+.slick-prev {
+  z-index: 99;
+  left: 20%;
+}
+.slick-next {
+  z-index: 99;
+  right: 20%;
+}
+.slick-prev.slick-arrow:before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+.slick-next.slick-arrow:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+  .slick-next:before,
+  .slick-prev:before {
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+  }
+  .slick-prev {
+    left: 5%;
+  }
+  .slick-next {
+    right: 5%;
+  }
+  .gallery__wrap .gallery__img img {
+    width: 100%;
+  }
+}
+
 ul {
   /*左の「・」を消す*/
   list-style: none;
